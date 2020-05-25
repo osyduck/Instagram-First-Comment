@@ -13,6 +13,7 @@ const jeda = "3"
 
 
 ; (async () => {
+  try{
   const { username, password } = await inquirer.prompt([
     {
       type: 'input',
@@ -31,13 +32,7 @@ const jeda = "3"
   const client = new Instagram({ username, password, cookieStore })
   const login = await client.login()
 
-  try{
-  if (login.authenticated == true) {
-    console.log("Logged in Successfully ");
-  } else {
-    console.log("Failed to Login");
-  }
-
+  if(login.authenticated != true) throw new Error('Login Failed')
   while(true){
   const profileTarget = await client.getUserByUsername({ username: target })
   const id = profileTarget.edge_owner_to_timeline_media.edges[0].node.id;
