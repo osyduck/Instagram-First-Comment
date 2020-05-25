@@ -1,0 +1,19 @@
+{
+  "name": "ig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "delay": "^4.3.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^7.1.0",
+    "instagram-web-api": "^2.2.0",
+    "moment": "^2.26.0",
+    "tough-cookie-filestore2": "^1.0.0"
+  }
+}
