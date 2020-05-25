@@ -31,6 +31,7 @@ const jeda = "3"
   const client = new Instagram({ username, password, cookieStore })
   const login = await client.login()
 
+  try{
   if (login.authenticated == true) {
     console.log("Logged in Successfully ");
   } else {
@@ -63,5 +64,8 @@ const jeda = "3"
     console.log(`[ ${moment().format('HH:mm:ss')} ] No New Post Found`)
   }
   await delay(`${jeda}000`)
+}
+}catch(e){
+	console.log(e)
 }
 })()
