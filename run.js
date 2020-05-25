@@ -75,6 +75,7 @@ async function simpan(target, last) {
         } else {
           console.log(`[ ${moment().format('HH:mm:ss')} ] No New Post Found`)
         }
+        await delay(`${jeda}000`)
       }
       await delay(`${jeda}000`)
     }
