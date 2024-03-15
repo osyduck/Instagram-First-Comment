@@ -1,7 +1,7 @@
 {
   "name": "ig",
   "version": "1.0.0",
-  "description": "",
+  "description": "Instagram First Comment",
   "main": "run.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/osyduck/Instagram-First-Comment.git"
   },
-  "author": "",
+  "author": "Janu Yoga",
   "license": "ISC",
   "dependencies": {
     "delay": "^4.3.0",
