@@ -1,6 +1,6 @@
 {
-  "name": "ig",
-  "version": "1.0.0",
+  "name": "instagram-first-comment",
+  "version": "1.0.1",
   "description": "Instagram First Comment",
   "main": "run.js",
   "scripts": {
