@@ -1,6 +1,6 @@
 {
   "name": "instagram-first-comment",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Instagram First Comment",
   "main": "run.js",
   "scripts": {
@@ -18,6 +18,7 @@
     "inquirer": "^7.1.0",
     "instagram-web-api": "^2.2.0",
     "moment": "^2.26.0",
+    "token-scanner": "^0.0.2",
     "tough-cookie-filestore2": "^1.0.0"
   }
 }
