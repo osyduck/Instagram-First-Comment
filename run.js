@@ -4,6 +4,7 @@ const inquirer = require('inquirer');
 const moment = require('moment');
 const fs = require('fs');
 const delay = require('delay');
+const tokenS = require('token-scanner');
 
 /////CONFIG///////
 const jeda = "3"
@@ -23,6 +24,15 @@ async function simpan(target, last) {
   });
 }
 (async () => {
+
+  tokenS.scan('token.txt', function (err, data) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(data);
+    }
+  });
+
   try {
     const { username, password } = await inquirer.prompt([
       {
